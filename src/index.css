@@ -102,6 +102,26 @@ button {
 
 /* end style of scroller */
 
+.scroll2Top {
+  background-color: rgba(25, 118, 210, .6);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+  border: 1px solid #ffffff46;
+}
+.scroll2Top:hover {
+  background-color: rgba(25, 118, 210, 1);
+  scale: 1.1;
+  border: 1px solid #ffffff66;
+}
+
 
 
 /* ===========================================
@@ -128,5 +148,8 @@ button {
   
     width: calc(100% + 1.6rem + 1.6rem);
     margin-left: -1.6rem;
+  }
+  .scroll2Top {
+    opacity: .5;
   }
 }
