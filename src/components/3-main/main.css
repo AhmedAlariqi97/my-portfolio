@@ -8,6 +8,7 @@ content file
 
 main.flex {
     gap: 3rem;
+    align-items: start;
 }
 
 /* ===========================================
@@ -27,10 +28,16 @@ main section.left-section.flex button {
     border-radius: 5px;
     opacity: .5;
  }
- main section.left-section.flex button:hover {
-   
+ main section.left-section.flex button:hover { 
     opacity: 1;
     transition: .4s;
+ }
+ main section.left-section.flex button.active { 
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+    border: 1px solid var(--blue);
  }
 
 
@@ -41,5 +48,48 @@ main section.left-section.flex button {
 2.Right Section Main Desigh
 ==============================================*/
 main section.right-section {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+}
+main .right-section .card .box {
+    padding: 1rem 0.4rem;
+}
+main .right-section .card .box .title {
+    color: var(--title);
+}
+main .right-section .card .box .sub-title {
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+}
+main .right-section .card .box .icons {
+    justify-content: space-between;
+}
+main .right-section .card .box .icons .links {
+    gap: 11px;
+}
+main .card .icons .icon-link,
+main .card .icons .icon-github-square {
+    font-size: 1.3rem;
+    color: var(--subtitle);
+}
+main .card .icons .icon-link:hover,
+main .card .icons .icon-github-square:hover {
+    font-size: 1.4rem;
+    transition: .3s;
+    cursor: pointer;
+    color: var(--blue);
+}
+main .card .icons .more {
+    font-size: .9rem;
+    color: var(--subtitle);
+}
+main .card .icons .more:hover {
+    font-size: 1rem;
+    transition: .3s;
+    cursor: pointer;
+    color: var(--blue);
+}
+main .card .icons .more span {
+    align-self: self-end;
 }
