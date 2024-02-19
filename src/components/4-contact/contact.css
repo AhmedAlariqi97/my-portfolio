@@ -21,6 +21,12 @@ section.contact-us .head .sub-title {
     margin-bottom: 2rem;
     line-height: 1.65rem;
 }
+
+/* ===========================================
+1.Left Section Main Desigh
+==============================================*/
+
+
 section.contact-us .body label {
     color: var(--subtitle);
 }
@@ -63,9 +69,7 @@ section.contact-us .body .submit:hover {
     scale: .97;
 }
 
-/* ===========================================
-1.Left Section Main Desigh
-==============================================*/
+
 
 
 
