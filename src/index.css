@@ -150,6 +150,8 @@ button {
     margin-left: -1.6rem;
   }
   .scroll2Top {
-    opacity: .5;
+    opacity: .6;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }
