@@ -7,7 +7,7 @@ import Footer from './components/5-footer/Footer'
 function App() {
 
   return (
-    <div className='container'>
+    <div id='up' className='container'>
       <Header />
       <Hero />
       <div className='divider' />
@@ -18,7 +18,9 @@ function App() {
       <Footer />
 
 
-      <button className='scroll2Top icon-chevron-up'></button>
+      <a href='#up'>
+        <button className='scroll2Top icon-chevron-up'></button>
+      </a>
       
     </div>
   )

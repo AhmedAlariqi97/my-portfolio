@@ -16,6 +16,7 @@ html {
   letter-spacing: .3px;
   box-sizing: border-box;
   /* scrollbar-color: #9e4673 #3d4a59; */
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
