@@ -57,6 +57,10 @@ header .mode {
     text-align: center;
     color: var(--subtitle);
     transition: .35s;
+    box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+}
+header .icon-sun {
+    color: rgb(255, 165, 0);
 }
 header .icon-menu:hover,
 header .mode:hover {

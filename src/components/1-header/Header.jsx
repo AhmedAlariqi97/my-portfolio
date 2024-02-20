@@ -42,7 +42,7 @@ const Header = () => {
         //get value from localstorage
         setTheme(localStorage.getItem("currentMode"))
        }} className='mode flex'>
-        <span className='icon-moon'></span>
+        { theme === "dark" ? (<span className='icon-moon'></span>) : (<span className='icon-sun'></span>)}
       </button>
 
 
