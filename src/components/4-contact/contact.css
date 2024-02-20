@@ -42,14 +42,28 @@ section.contact-us .body .form #message {
     transition: .4s;
     font-size: 1.1rem;
 }
-section.contact-us .body .form #email:focus,
-section.contact-us .body .form #message:focus {
-   border: 1px solid rgb(45, 212, 191);
+
+.light section.contact-us .body .form #email,
+.light section.contact-us .body .form #message {
+    background-color: rgba(255, 255, 255, .165);
+    border: 1px solid rgb(128, 128, 128, .451);
+    box-shadow: 1px 1px 1px rgba(73, 73, 75, .105);
+    color: #232324;
 }
+section.contact-us .body .form #email:focus,
+section.contact-us .body .form #message:focus,
 section.contact-us .body .form #email:hover,
 section.contact-us .body .form #message:hover {
    border: 1px solid rgb(45, 212, 191);
 }
+
+.light .contact-us .body .form #email:focus,
+.light .contact-us .body .form #message:focus,
+.light .contact-us .body .form #email:hover,
+.light .contact-us .body .form #message:hover {
+   border: 1px solid rgb(78, 80, 80);
+}
+ 
 section.contact-us .body .form #message {
     min-height: 9rem;
     resize: vertical;

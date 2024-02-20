@@ -1,10 +1,26 @@
+import { useCallback } from 'react'
 import Header from './components/1-header/Header'
 import Hero from './components/2-hero/Hero'
 import Main from './components/3-main/Main'
 import Contact from './components/4-contact/Contact'
 import Footer from './components/5-footer/Footer'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 function App() {
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        setshowScrollBtn(true);
+      } else {
+        setshowScrollBtn(false);
+      }
+    });
+  }, []);
+  
+
+  const [showScrollBtn, setshowScrollBtn] = useState(false);
 
   return (
     <div id='up' className='container'>
@@ -18,9 +34,15 @@ function App() {
       <Footer />
 
 
-      <a href='#up'>
-        <button className='scroll2Top icon-chevron-up'></button>
-      </a>
+      {/* {showScrollBtn && (
+        <a href='#up'>
+          <button className='scroll2Top icon-chevron-up'></button>
+        </a>
+      )} */}
+
+        <a href='#up' style={{ opacity: showScrollBtn ? 1 : 0, transition: "1s"}}>
+          <button className='scroll2Top icon-chevron-up'></button>
+        </a>
       
     </div>
   )
