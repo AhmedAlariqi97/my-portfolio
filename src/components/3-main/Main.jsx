@@ -1,41 +1,61 @@
 import { useState } from 'react'
 import './main.css'
 
+const myProjects = [
+  {title: "react project", category: "react", descreption: "akldjf akldjf akldjf alkjdf alkdjf akjdfk akldjf", imgPath: "./" },
+  {title: "html & css project", category: "html", descreption: "akldjf akldjf akldjf alkjdf alkdjf akjdfk akldjf", imgPath: "./" },
+  {title: "javascript project", category: "javascript", descreption: "akldjf akldjf akldjf alkjdf alkdjf akjdfk akldjf", imgPath: "./" },
+  {title: "node project", category: "node", descreption: "akldjf akldjf akldjf alkjdf alkdjf akjdfk akldjf", imgPath: "./" }
+]
+
 const Main = () => {
 
-  const [currentActive, setcurrentActive] = useState('all')
+  const [currentActive, setCurrentActive] = useState('all')
+  const [arr, setArr] = useState(myProjects)
 
   return (
     <main className='main flex'>
       <section className='left-section flex'>
         <button onClick={() => {
-          setcurrentActive('all')
+          setCurrentActive('all')
         }}
           className={currentActive === 'all' ? 'active' : null}>all project</button>
 
         <button onClick={() => {
-          setcurrentActive('html')
+          setCurrentActive('html');
+          setArr([
+            {title: "html & css project", category: "html", descreption: "akldjf akldjf akldjf alkjdf alkdjf akjdfk akldjf", imgPath: "./" },
+          ])
         }}
           className={currentActive === 'html' ? 'active' : null}>Html & Css</button>
 
         <button onClick={() => {
-          setcurrentActive('javascript')
+          setCurrentActive('javascript');
+          setArr([
+            {title: "javascript project", category: "javascript", descreption: "akldjf akldjf akldjf alkjdf alkdjf akjdfk akldjf", imgPath: "./" },
+          ])
         }}
           className={currentActive === 'javascript' ? 'active' : null}>JavaScript</button>
 
         <button onClick={() => {
-          setcurrentActive('react')
+          setCurrentActive('react');
+          setArr([
+            {title: "react project", category: "react", descreption: "akldjf akldjf akldjf alkjdf alkdjf akjdfk akldjf", imgPath: "./" },
+          ])
         }}
           className={currentActive === 'react' ? 'active' : null}>React & Next</button>
 
         <button onClick={() => {
-          setcurrentActive('node')
+          setCurrentActive('node');
+          setArr([
+            {title: "node project", category: "node", descreption: "akldjf akldjf akldjf alkjdf alkdjf akjdfk akldjf", imgPath: "./" }
+          ])
         }}
           className={currentActive === 'node' ? 'active' : null}>Node & Express</button>
       </section>
 
       <section className='right-section flex'>
-        {["aa", "bb", "cc", "1", "7"].map((item) => {
+        {arr.map((item) => {
           return (
             <article key={item} className='card'>
               <img src='./ahmed-cir.png' alt='' width={277} />
