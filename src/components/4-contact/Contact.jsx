@@ -1,5 +1,7 @@
 import './contact.css'
 import { useForm, ValidationError } from '@formspree/react';
+import Lottie from "lottie-react";
+import doneAnimation from "../../../public/animations/done.json";
 
 const Contact = () => {
 
@@ -51,7 +53,9 @@ const Contact = () => {
             </button>
 
             { state.succeeded && (
-              <h3 className='message-success'>Your has been sent successfully</h3>
+              <h3 className='message-success flex'>
+                <Lottie loop={false} style={{height: 37}} animationData={doneAnimation} />
+                Your has been sent successfully</h3>
             )}
           </form>
         </div>
