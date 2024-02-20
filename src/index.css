@@ -91,6 +91,10 @@ button:active {
 button {
   all: unset;
 }
+button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
 
 /* start style of scroller */
 ::-webkit-scrollbar {

@@ -82,6 +82,13 @@ section.contact-us .body .submit {
 section.contact-us .body .submit:hover {
     scale: .97;
 }
+.contact-us .body .message-success {
+    margin-top: 1rem;
+}
+
+.light .contact-us .body .message-success {
+    color: #232324;
+}
 
 
 
@@ -125,5 +132,6 @@ section.contact-us .body .submit:hover {
         width: 30%;
         align-self: center;
     }
+
 
 }
