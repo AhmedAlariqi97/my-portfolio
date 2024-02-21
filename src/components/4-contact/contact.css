@@ -25,7 +25,9 @@ section.contact-us .head .sub-title {
 /* ===========================================
 1.Left Section Main Desigh
 ==============================================*/
-
+section.contact-us .body {
+    justify-content: space-between;
+}
 
 section.contact-us .body label {
     color: var(--subtitle);
@@ -132,6 +134,12 @@ section.contact-us .body .submit:hover {
         width: 30%;
         align-self: center;
     }
+    
 
 
+}
+@media (max-width: 750px) {
+    section.contact-us .body .animation {
+        display: none;
+    }
 }

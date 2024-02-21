@@ -52,6 +52,10 @@ section.hero .social-media .icon:hover {
     cursor: pointer;
     color: var(--blue);
 }
+section.hero .animation {
+    width: 100%;
+    translate: 100px 55px;
+}
 
 
 
@@ -59,3 +63,9 @@ section.hero .social-media .icon:hover {
 /* ===========================================
 2.Right Section hero Desigh
 ==============================================*/
+
+@media (max-width: 750px) {
+    section.hero .animation {
+        display: none;
+    }
+}

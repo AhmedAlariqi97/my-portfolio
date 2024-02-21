@@ -2,6 +2,7 @@ import './contact.css'
 import { useForm, ValidationError } from '@formspree/react';
 import Lottie from "lottie-react";
 import doneAnimation from "../../../public/animations/done.json";
+import contactAnimation from "../../../public/animations/contactUs.json";
 
 const Contact = () => {
 
@@ -60,7 +61,7 @@ const Contact = () => {
           </form>
         </div>
         <div className='right-section animation'>
-            animate
+        <Lottie style={{height: 400}} animationData={contactAnimation} />
         </div>
       </div>
     </section>
