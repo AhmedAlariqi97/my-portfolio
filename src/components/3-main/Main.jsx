@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './main.css'
 import { myProjects } from './myProjects'
+import { AnimatePresence, motion } from 'framer-motion'
 
 
 
@@ -47,10 +48,18 @@ const Main = () => {
           className={currentActive === 'node' ? 'active' : null}>Node & Express</button>
       </section>
 
+      
       <section className='right-section flex'>
+      <AnimatePresence>
         {arr.map((item) => {
           return (
-            <article key={item} className='card'>
+            <motion.article
+            layout
+            initial={{ transform: "scale(0)" }}
+            animate={{ transform: "scale(1)" }}
+            transition={{ type: "spring", damping: 7, stiffness: 50}}
+            
+            key={item.imgPath} className='card'>
               <img src={item.imgPath} alt='' width={277} />
               <div className='box' style={{ width: "277px" }}>
                 <h2 className='title'>{item.title}</h2>
@@ -64,9 +73,10 @@ const Main = () => {
                     <span className='icon-arrow-right'></span></a>
                 </div>
               </div>
-            </article>
+            </motion.article>
           )
         })}
+      </AnimatePresence>
       </section>
     </main>
   )

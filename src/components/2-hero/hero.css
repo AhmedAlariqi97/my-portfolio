@@ -16,6 +16,9 @@ section.hero {
 section.hero .left-section {
     flex-grow: 1;
 }
+section.hero .parent-avatar {
+    min-height: 150px;
+}
 section.hero .parent-avatar .avatar {
     width: 150px;
     border-radius: 50%;

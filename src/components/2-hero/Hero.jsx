@@ -3,6 +3,7 @@ import './hero.css'
 import Lottie from "lottie-react";
 import hero from "../../../public/animations/heroSection.json";
 import {useRef} from 'react'
+import { motion } from 'framer-motion';
 
 const Hero = () => {
 
@@ -11,13 +12,24 @@ const Hero = () => {
     <section className='hero flex'>
       <div className='left-section'>
         <div className='parent-avatar'>
-          <img src='./ahmed-cir.png' className='avatar' alt='' />
+          <motion.img
+          initial={{transform: "scale(0)"}}
+          animate={{transform: "scale(1)"}}
+          transition={{damping: 6, type: "spring", stiffness: 100}}
+
+          src='./ahmed-cir.png' className='avatar' alt='' />
           <span className='icon-verified_user'></span>
         </div>
 
-        <h1 className='title'>
+        <motion.h1
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 4}}
+
+        className='title'>
           Software Developer, Graghic Designer
-        </h1>
+        </motion.h1>
+
         <p className='sub-title'>
           l'm Ahmed Alariqi, software developer and graphic designer, software developer and graphic designer, software developer and graphic designer, software developer and graphic designer.
         </p>
