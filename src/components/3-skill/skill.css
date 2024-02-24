@@ -14,3 +14,8 @@ content file
 /* ===========================================
 1.Left Section Main Desigh
 ==============================================*/
+section.skill .head .title {
+    font-size: 2.1rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+}
