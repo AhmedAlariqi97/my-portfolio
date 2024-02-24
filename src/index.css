@@ -35,6 +35,8 @@ html {
 
   --bgheader: rgb(39,39,42);
   --blue: rgb(93,188,252);
+
+  --shadow-nav: rgb(49, 48, 48);
 }
 
 .light {
@@ -48,6 +50,8 @@ html {
 
   --bgheader: rgb(253,253,253);
   --blue: rgb(0,149,246);
+
+  --shadow-nav: rgb(197 168 168);
 }
 body {
   background-color: var(--primary);

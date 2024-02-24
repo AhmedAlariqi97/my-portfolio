@@ -20,7 +20,7 @@ header.flex nav {
     background-color: var(--bgheader);
     padding: .77rem 1.6rem;
     border-radius: 55px;
-    box-shadow: 1px 1px 40px rgb(49, 48, 48);
+    box-shadow: 1px 1px 40px var(--shadow-nav);
 }
 header ul.flex {
     gap: 16px;
