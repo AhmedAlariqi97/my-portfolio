@@ -1,15 +1,31 @@
 import React from 'react'
 import './skill.css'
-import { mySkills } from './mySkills'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const Skill = () => {
+
+    const mySkills = [
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+        {title: "react project"},
+      ]
+
+
   return (
     <section className='skill'>
         <div className='head'>
             <h2 className='title'>Skills</h2>
         </div>
-        <div className='body'>
+        <div className='body flex'>
             <AnimatePresence>
                 {mySkills.map((item) => {
                 return (
@@ -18,10 +34,9 @@ const Skill = () => {
                     initial={{ transform: "scale(0)" }}
                     animate={{ transform: "scale(1)" }}
                     transition={{ type: "spring", damping: 7, stiffness: 50}}
-                    
-                    key={item.imgPath} className='card'>
+                    className='card'>
                    
-                    <div className='box' style={{ width: "277px" }}>
+                    <div className='box'>
                         <h2 className='title'>{item.title}</h2>
                     </div>
                     </motion.article>
