@@ -1,11 +1,13 @@
 import { useCallback } from 'react'
 import Header from './components/1-header/Header'
 import Hero from './components/2-hero/Hero'
+import Skill from './components/3-skill/Skill'
 import Main from './components/4-main/Main'
 import Contact from './components/5-contact/Contact'
-import Footer from './components/5-footer/Footer'
+import Footer from './components/6-footer/Footer'
 import { useState } from 'react'
 import { useEffect } from 'react'
+
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
     <div id='up' className='container'>
       <Header />
       <Hero />
+      <div className='divider' />
+      <Skill />
       <div className='divider' />
       <Main />
       <div className='divider' />
