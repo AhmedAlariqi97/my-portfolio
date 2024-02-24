@@ -1,7 +1,7 @@
 
 import './hero.css'
 import Lottie from "lottie-react";
-import hero from "../../../public/animations/heroSection.json";
+import hero from "../../animations/heroSection.json";
 import {useRef} from 'react'
 import { motion } from 'framer-motion';
 
